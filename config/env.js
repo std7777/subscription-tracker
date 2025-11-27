@@ -3,4 +3,4 @@ import { config } from 'dotenv';
 config({path: `.env.${process.env.NODE_ENV || 'development'}.local` });
 
 //the variables can be exported from the file
-export const {PORT,NODE_ENV}=process.env;
+export const {PORT,NODE_ENV ,DB_URI}=process.env;
