@@ -28,4 +28,4 @@ const User = mongoose.model("User",userSchema);
 
 export default User;
 
-//{name:'john doe', email:'jd@school.org', password:'pswd123'}
+//{name:'john doe', email:'jd@school.org', password:'pwd123'}
