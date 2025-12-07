@@ -5,7 +5,7 @@ const aj = arcjet({
     // Get your site key from https://app.arcjet.com and set it as an environment
     // variable rather than hard coding.
     key: ARCJET_KEY,
-    characteristics: ["ip.src"],
+    //characteristics: ["ip.src"],
     rules: [
         // Shield protects your app from common attacks e.g. SQL injection
         shield({ mode: "LIVE" }),
@@ -15,7 +15,6 @@ const aj = arcjet({
             // Block all bots except the following
             allow: [
                 "CATEGORY:SEARCH_ENGINE", // Google, Bing, etc
-                "UA:POSTMAN"
                 // Uncomment to allow these other common bot categories
                 // See the full list at https://arcjet.com/bot-list
                 //"CATEGORY:MONITOR", // Uptime monitoring services

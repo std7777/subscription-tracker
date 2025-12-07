@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 const subscriptionSchema = new mongoose.Schema({
     name:{
         type:String,
-        required:[true,"Password is required"],
+        required:[true,"Subscription name is required"],
         trim: true,
         minLength: 1,
         maxLength: 100,
@@ -35,6 +35,7 @@ const subscriptionSchema = new mongoose.Schema({
     status:{
         type:String,
         enum:['active','expired','canceled'],
+        default: 'active',
     },
     startDate:{
         type:Date,
